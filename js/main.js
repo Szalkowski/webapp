@@ -9,11 +9,12 @@ function showPage() {
   document.getElementById("content").style.display = "block";
 }
  $(function(){
-   $('.hamburger').on('click', function(event){
+
+    $('.hamburger').on('click', function(event){
         event.stopPropagation();
         $('.menu').toggle();
-   });
-   $(document).on('click', function(){
-    $('.menu').hide();
+    });
+    $('.menu').on('click', function(){
+        $('.menu').hide();
    });
 });

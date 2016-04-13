@@ -128,19 +128,30 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 400;
     font-style: normal;
     color: #fff;
 }
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
  ul,
- li {
+ li,
+ p {
     padding: 0;
     margin: 0;
  }
+
+ button {
+    outline: none;
+ }
+
 .main-btns {
     position: absolute;
-    top: 36%;
+    top: 24%;
     color: #fff;
     background: transparent;
     border: none;
@@ -150,13 +161,13 @@ h1 {
 
 .home-header {
     position: relative;
-    height: 90px;
+    height: 45px;
     background-color: #ea4c88;
 }
 
 .tab-title {
     text-align: center;
-    line-height: 90px;
+    line-height: 45px;
 }
 
 .menu-icon {
@@ -167,7 +178,7 @@ h1 {
     right: 5%;
 }
 .menu-in-row {
-    height: 120px;
+    height: 60px;
 
     border-bottom: 5px solid rgba(154, 98, 70, 0.2);
     background-color: #fff;
@@ -179,17 +190,17 @@ h1 {
     width: 320px;
     margin: 0 auto;
     list-style-type: none;
-    line-height: 120px;
+    line-height: 60px;
 }
 
 .menu-link {
     display: inline-block;
-    padding-left: 9px;
+    padding-left: 14px;
 }
 
 .menu-link a {
     display: block;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 300;
     color: #000;
     text-decoration: none;
@@ -282,6 +293,61 @@ h1 {
 
 .nav-tab {
     padding-left: 20px;
+}
+
+/* profile page */
+
+.profile-content {
+    position: relative;
+    height: 303px;
+    text-align: center;
+}
+
+.profile-details img {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: -65px;
+}
+
+.add-button {
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    border: none;
+    border-radius: 14px;
+    background: #698d41;
+    background-size: 28px 28px;
+}
+.profile-details i {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    font-size: 28px;
+    color: #8aba56;
+}
+
+.about-me {
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    margin-left: -67px;
+    color: #373737;
+}
+
+.profile-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.website {
+    font-size: 12px;
+    font-weight: 300;
 }
 /* ==========================================================================
    Helper classes
