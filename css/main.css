@@ -212,7 +212,7 @@ h1 {
 /* hamburger */
 
 .menu {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     width: 280px;

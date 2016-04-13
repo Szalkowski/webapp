@@ -9,12 +9,13 @@ function showPage() {
   document.getElementById("content").style.display = "block";
 }
  $(function(){
-    $('.menu').hide();
-
-    $('.hamburger').on('click', function(){
-        $('.menu').toggle();
+    $('.hamburger').click(function(){
+            $('.menu').slideToggle("fast");
+        });
+    $(document).on("click", function(event){
+        var $trigger = $(".hamburger");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $(".menu").slideUp("fast");
+            };
     });
-    $('#content').on('click', function(){
-        $('.menu').toggle();
-    });
- });
+});
