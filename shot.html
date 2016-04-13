@@ -1,0 +1,88 @@
+    <!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>webb app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    </head>
+    <body onload="myFunction()">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="loader"></div>
+        <section id="content" style="display:none;">
+            <header class="home-header">
+                <button class="main-btns menu-icon">
+                    <i class="icon-left-circle"></i>
+                </button>
+                <h1 class="tab-title">Shot</h1>
+                <button class="main-btns operation-icon">
+                    <i class="icon-forward"></i>
+                </button>
+            </header>
+            <main class="shot-content">
+                <div class="repositiories">
+                    <div class="shot-photo">
+                        <img src="img/profile-picture.png" alt="profile picture">
+                        <button class="add-button"><i class="plus-icon icon-plus-circle"></i></button>
+                    </div>
+                    <div class="details">
+                        <h2 class="title">Flat Icon</h2>
+                        <p class="whom">by <span class="creator">Mark / Hipstacowboys</span></p>
+                        <p class="date">Nov 10, 2013</p>
+                    </div>
+                </div>
+                <div class="shot-image"><a href="#">
+                    <img src="img/apps-home.png" alt="apps"></a>
+                </div>
+                <div class="messages">
+                    <ul class="counters">
+                        <li><a href="#"></a><i class="icon-heart-filled"></i>287</li>
+                        <li><a href="#"></a><i class="icon-chat"></i>12</li>
+                        <li><a href="#"></a><i class="icon-trash-empty"></i>145</li>
+                    </ul>
+                </div>
+                <div class="messenger">
+                    <ul>
+                        <li class="message">
+                            <img src="img/avatar1.png" alt="">
+                            <p class="name">Mark Mayers</p><p class="message-text">Awesome man! Great shot.</p>
+                        </li>
+                        <li class="message">
+                            <img src="img/avatar2.png" alt="">
+                            <p class="name">Ahmund Lakjev</p><p class="message-text">Perfect!</p>
+                        </li>
+                        <li class="message">
+                            <img src="img/avatar1.png" alt="">
+                            <p class="name">Peter Jobs</p><p class="message-text">Love colors!</p>
+                        </li>
+                        <li class="message">
+                            <img src="img/avatar2.png" alt="">
+                            <p class="name">Amy Wallis</p><p class="message-text">You hit the line man! Congratulations!</p>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <footer class="comment">
+                <form>
+                    <input type="text" placeholder="Write comment">
+                    <button class="send" type="submit"><i class="icon-chat"></i></button>
+                </form>
+            </footer>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

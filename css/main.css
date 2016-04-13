@@ -137,6 +137,8 @@ h1 {
 h2 {
     margin: 0;
     padding: 0;
+    font-size: 17px;
+    font-weight: 500;
 }
  ul,
  li,
@@ -328,7 +330,7 @@ h2 {
     background: #698d41;
     background-size: 28px 28px;
 }
-.profile-details i {
+.plus-icon {
     position: absolute;
     top: -5px;
     left: -5px;
@@ -344,10 +346,7 @@ h2 {
     color: #373737;
 }
 
-.profile-name {
-    font-size: 17px;
-    font-weight: 500;
-}
+
 
 .website {
     font-size: 12px;
@@ -375,6 +374,95 @@ h2 {
 .attribute:nth-of-type(1) {
     padding-left: 9px;
 }
+
+/* shot page */
+
+.repositiories {
+    position: relative;
+    height: 105px;
+
+}
+
+.shot-photo{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.shot-photo img {
+    width: 65px;
+    height: 65px;
+}
+
+.shot-photo .add-button {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.details {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.whom {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.creator {
+    color: #eb5d91;
+}
+
+.date {
+    padding-top: 5px;
+    font-size: 9px;
+    font-weight: 300;
+    color: #c7c7c7;
+}
+
+.messages {
+    height: 65px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 65px;
+    background: #e5e5e5;
+}
+
+.counters {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.counters li {
+    display: inline-block;
+    padding-left: 45px;
+}
+
+.shot-image img {
+    width: 100%;
+}
+
+.messenger ul {
+    list-style-type: none;
+}
+.message img {
+    float: left;
+    width: 55px;
+    height: 55px;
+}
+.message {
+    clear: both;
+}
+
+.name {
+    float: left;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
