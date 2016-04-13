@@ -96,19 +96,33 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* loader */
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -25px 0 0 -25px;
+    border: 3px solid transparent;
+    border-top: 3px solid #ea4c88;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* typography */
 
 body {
 
     font-family: 'Roboto', sans-serif;
     color: #000;
     background: #fff;
-}
-
-.main-btns {
-    position: absolute;
-    color: #fff;
-    background: transparent;
-    border: none;
 }
 
 h1 {
@@ -119,21 +133,13 @@ h1 {
     font-style: normal;
     color: #fff;
 }
-/* loader */
 
-.loader {
-    display: none;
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.main-btns {
+    position: absolute;
+    top: 36%;
+    color: #fff;
+    background: transparent;
+    border: none;
 }
 
 /* content */
@@ -150,13 +156,11 @@ h1 {
 }
 
 .menu-icon {
-    top: 45%;
-    left: 20%;
+    left: 40%;
 }
 
 .operation-icon {
-    top: 45%;
-    right: 20%;
+    right: 40%;
 }
 .menu-in-row {
     height: 120px;
@@ -172,25 +176,36 @@ h1 {
 
 .menu-link {
     display: inline-block;
-    padding-left: 55px;
+    box-sizing: border-box;
+    margin-left: 55px;
 }
 
 .menu-link:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .menu-link a {
+    display: block;
+    width: 70px;
+    font-weight: 300;
     color: #000;
     text-decoration: none;
 }
+ .menu-link a:hover {
+    font-weight: 500;
+}
 
-.main-screen {
-
+.active-row-element {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 25px 0 25px;
+    border-color: #fff transparent transparent transparent;
 }
 
 .apps img{
     float: left;
-    width: 49.5vw;
+    width: 50%;
 }
 
 

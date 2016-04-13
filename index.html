@@ -13,40 +13,42 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     </head>
-    <body>
+    <body onload="myFunction()">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="loader"></div>
-        <header class="home-header">
-            <button class="main-btns menu-icon">
-                <i class="icon-menu"></i>
-            </button>
-            <h1 class="tab-title">Shot</h1>
-            <button class="main-btns operation-icon">
-                <i class="icon-arrows"></i>
-            </button>
-        </header>
-        <nav class="menu-in-row">
-            <ul class="row-menu-links">
-                <li class="menu-link"><a href="#">Following</a></li>
-                <li class="menu-link"><a href="#">Suggestions</a></li>
-                <li class="menu-link"><a href="#">Popular</a></li>
-                <li class="menu-link"><a href="#">Events</a></li>
-            </ul>
-        </nav>
-        <main class="main-screen">
-            <a href="#" class="apps"><img src="img/clients-home.png" alt="client app"></a>
-            <a href="#" class="apps"><img src="img/favourities-home.png" alt="favourities app"></a>
-            <a href="#" class="apps"><img src="img/apps-home.png" alt="apps"></a>
-            <a href="#" class="apps"><img src="img/locked-heart.png" alt="safe house"></a>
-            <a href="#" class="apps"><img src="img/tour.png" alt="guide"></a>
-            <a href="#" class="apps"><img src="img/places.png" alt="favourite places"></a>
-            <a href="#" class="apps"><img src="img/messenger.png" alt="messenger"></a>
-            <a href="#" class="apps"><img src="img/activity.png" alt="activity"></a>
-            <a href="#" class="apps"><img src="img/airports.png" alt="airports app"></a>
-            <a href="#" class="apps"><img src="img/capitals.png" alt="capitals"></a>
-        </main>
+        <div id="loader"></div>
+        <div id="content" style="display:none;">
+            <header class="home-header">
+                <button class="main-btns menu-icon">
+                    <i class="icon-menu"></i>
+                </button>
+                <h1 class="tab-title">Shot</h1>
+                <button class="main-btns operation-icon">
+                    <i class="icon-arrows"></i>
+                </button>
+            </header>
+            <nav class="menu-in-row">
+                <ul class="row-menu-links">
+                    <li class="menu-link"><a href="#">Following</a></li>
+                    <li class="menu-link"><a href="#">Suggestions</a></li>
+                    <li class="menu-link"><a href="#">Popular</a></li>
+                    <li class="menu-link"><a href="#">Events</a></li>
+                </ul>
+            </nav>
+            <main class="main-screen">
+                <a href="#" class="apps"><img src="img/clients-home.png" alt="client app"></a>
+                <a href="#" class="apps"><img src="img/favourities-home.png" alt="favourities app"></a>
+                <a href="#" class="apps"><img src="img/apps-home.png" alt="apps"></a>
+                <a href="#" class="apps"><img src="img/locked-heart.png" alt="safe house"></a>
+                <a href="#" class="apps"><img src="img/tour.png" alt="guide"></a>
+                <a href="#" class="apps"><img src="img/places.png" alt="favourite places"></a>
+                <a href="#" class="apps"><img src="img/messenger.png" alt="messenger"></a>
+                <a href="#" class="apps"><img src="img/activity.png" alt="activity"></a>
+                <a href="#" class="apps"><img src="img/airports.png" alt="airports app"></a>
+                <a href="#" class="apps"><img src="img/capitals.png" alt="capitals"></a>
+            </main>
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
