@@ -133,7 +133,11 @@ h1 {
     font-style: normal;
     color: #fff;
 }
-
+ ul,
+ li {
+    padding: 0;
+    margin: 0;
+ }
 .main-btns {
     position: absolute;
     top: 36%;
@@ -142,7 +146,7 @@ h1 {
     border: none;
 }
 
-/* content */
+/* header */
 
 .home-header {
     position: relative;
@@ -156,43 +160,39 @@ h1 {
 }
 
 .menu-icon {
-    left: 40%;
+    left: 5%;
 }
 
 .operation-icon {
-    right: 40%;
+    right: 5%;
 }
 .menu-in-row {
     height: 120px;
+
     border-bottom: 5px solid rgba(154, 98, 70, 0.2);
     background-color: #fff;
 }
 
+/* horizontal menu */
+
 .row-menu-links{
-    text-align: center;
+    width: 320px;
+    margin: 0 auto;
     list-style-type: none;
     line-height: 120px;
 }
 
 .menu-link {
     display: inline-block;
-    box-sizing: border-box;
-    margin-left: 55px;
-}
-
-.menu-link:first-child {
-    margin-left: 0;
+    padding-left: 9px;
 }
 
 .menu-link a {
     display: block;
-    width: 70px;
+    font-size: 1rem;
     font-weight: 300;
     color: #000;
     text-decoration: none;
-}
- .menu-link a:hover {
-    font-weight: 500;
 }
 
 .active-row-element {
@@ -203,22 +203,78 @@ h1 {
     border-color: #fff transparent transparent transparent;
 }
 
+/* content */
 .apps img{
     float: left;
     width: 50%;
 }
 
+/* hamburger */
 
+.menu {
 
+}
 
+.search-wrap {
+    position: relative;
+    padding-top: 10px;
+    color: #c1c1c1;
+}
 
+.menu-search-icon {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: transparent;
+    border: none;
+}
 
+.search {
+    width: 250px;
+    height: 25px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 5px;
+}
 
+.search:focus {
+    outline: none;
+}
 
+.menu-item {
+    display: block;
+    height: 45px;
+    padding-top: 2px;
+    background: #303030;
+}
 
+.menu-item:nth-of-type(5),
+:nth-of-type(10) {
+    padding-top: 10px;
+}
 
+.menu-item img {
+    width: 35px;
+    height: 35px;
+}
 
+.menu-item a{
+    display: block;
+    height: 45px;
+    padding-left: 10px;
+    line-height: 45px;
+    text-decoration: none;
+    color: #b9b9b9;
+    background: #353535;
+}
 
+.nav-icon {
+    padding: 0 10px 0 5px;
+}
+
+.nav-tab {
+    padding-left: 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
