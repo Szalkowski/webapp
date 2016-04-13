@@ -212,7 +212,11 @@ h1 {
 /* hamburger */
 
 .menu {
-
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 280px;
+    z-index: 99999;
 }
 
 .search-wrap {
@@ -224,15 +228,16 @@ h1 {
 .menu-search-icon {
     position: absolute;
     top: 12px;
-    left: 0;
+    left: 10px;
     background: transparent;
     border: none;
 }
 
 .search {
-    width: 250px;
+    width: 200px;
     height: 25px;
     padding-left: 35px;
+    margin-left: 10px;
     border: none;
     border-radius: 5px;
 }
@@ -253,6 +258,9 @@ h1 {
     padding-top: 10px;
 }
 
+.menu-item:nth-last-child(1) {
+    padding-bottom: 82px;
+}
 .menu-item img {
     width: 35px;
     height: 35px;

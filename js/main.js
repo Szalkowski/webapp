@@ -9,6 +9,12 @@ function showPage() {
   document.getElementById("content").style.display = "block";
 }
  $(function(){
+    $('.menu').hide();
 
-
+    $('.hamburger').on('click', function(){
+        $('.menu').toggle();
+    });
+    $('#content').on('click', function(){
+        $('.menu').toggle();
+    });
  });
