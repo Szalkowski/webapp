@@ -233,6 +233,9 @@ i {
     width: 50%;
 }
 
+.main-screen ul {
+    list-style-type: none;
+}
 /* hamburger */
 
 .menu {
