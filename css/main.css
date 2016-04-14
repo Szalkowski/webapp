@@ -187,13 +187,11 @@ i {
 }
 
 .menu-icon {
-    left: 50%;
-    margin-left: -130px;
+    left: 15px;
 }
 
 .operation-icon {
-    right: 50%;
-    margin-right: -130px;
+    right: 15px;
 }
 
 /* horizontal menu */
@@ -207,6 +205,11 @@ i {
     background-color: #fff;
 }
 
+@media screen and (min-width: 640px) {
+    .menu-in-row {
+        overflow-x: hidden;
+    }
+}
 .row-menu-links{
     width: 24em;
     margin: 0 auto;
