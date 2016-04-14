@@ -330,6 +330,7 @@ i {
     width: 130px;
     height: 130px;
     margin-left: -65px;
+    border-radius: 65px;
 }
 
 .add-button {
