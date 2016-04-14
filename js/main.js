@@ -1,7 +1,5 @@
-var delay;
-
 function myFunction() {
-    delay = setTimeout(showPage, 2000);
+    setTimeout(showPage, 2000);
 }
 
 function showPage() {
