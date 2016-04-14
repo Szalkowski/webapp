@@ -9,12 +9,15 @@ function showPage() {
   document.getElementById("content").style.display = "block";
 }
  $(function(){
-
-    $('.hamburger').on('click', function(event){
-        event.stopPropagation();
-        $('.menu').toggle();
-    });
-    $('.menu').on('click', function(){
-        $('.menu').hide();
-   });
+        $('.hamburger').on('click', function(e){
+            e.stopPropagation();
+            $('.menu').toggle('slow');
+        });
+        $('body').on('click', function(){
+            $('.menu').hide();
+        });
+        $('.menu').on('click', function(e){
+            e.stopPropagation();
+        })
 });
+
