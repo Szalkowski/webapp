@@ -7,14 +7,15 @@ function showPage() {
     document.getElementById("content").style.display = "block";
 }
  $(function(){
+    var $menu = $('.menu');
     $('.hamburger').on('click', function(e){
         e.stopPropagation();
-        $('.menu').toggle('slow');
+        $menu.toggle('slow');
     });
     $('body').on('click', function(){
-        $('.menu').hide();
+        $menu.hide();
     });
-    $('.menu').on('click', function(e){
+    $menu.on('click', function(e){
         e.stopPropagation();
     });
 });
