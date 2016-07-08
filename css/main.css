@@ -96,6 +96,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /* loader */
 
 #loader {
@@ -118,11 +119,16 @@ textarea {
 
 /* typography */
 
+ @-ms-viewport {
+      width: device-width;
+    }
+
 body {
 
     font-family: 'Roboto', sans-serif;
     color: #000;
     background: #fff;
+    -ms-overflow-style: none !important;
 }
 
 h1 {
@@ -210,6 +216,7 @@ i {
         overflow-x: hidden;
     }
 }
+
 .row-menu-links{
     width: 24em;
     margin: 0 auto;
